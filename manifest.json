@@ -1,7 +1,7 @@
 {
   "name": "PriceUndo",
-  "description": "상품 가격의 끝자리 마케팅(예: 9,900원)을 제거해 실제 가격 인식을 돕는 크롬 확장 프로그램입니다.",
-  "version": "0.0.1",
+  "description": "상품 가격의 끝자리 마케팅(예: 9,900원)을 제거해 실제 가격 인식을 돕는 크롬 확장 프로그램입니다. 현재 지원하는 사이트는 쿠팡입니다.",
+  "version": "1.0.0",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup/popup.html",
@@ -10,8 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.coupang.com/*",
-        "https://smartstore.naver.com/*"
+        "https://www.coupang.com/*"
       ],
       "js": ["content.js"]
     }

@@ -1,3 +1,3 @@
-import { priceUndo } from "./priceUndo";
+import { changePrice } from "./utils/changePrice";
 
-priceUndo();
+changePrice();
