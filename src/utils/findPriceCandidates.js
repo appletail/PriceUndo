@@ -13,6 +13,6 @@ export function findPriceCandidates() {
         candidates.push({ original: txt, element: el });
       }
     });
-    console.log('Price candidates found:', candidates.length);
+
   return candidates;
 }
