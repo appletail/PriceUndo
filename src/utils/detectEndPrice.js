@@ -7,7 +7,7 @@ export const detectEndPrice = (price, maxUnit = 10000) => {
   for (const unit of units) {
     const rem = price % unit;
     const step = unit / 10;
-    if (rem === unit - step || rem === unit - 2 * step) {
+    if (rem <= unit - step && rem >= unit - 2 * step) {
       return unit;
     }
   }
